@@ -1,0 +1,11 @@
+[`commands.rs`](https://github.com/KekmaTime/ferrous/blob/main/src/mods/commands.rs): This file contains the logic for executing commands and changing directories. The `execute_command` function checks if the command exists, sets up the standard input and output, and then attempts to spawn the command. If the command is successfully spawned, it returns the Child process; otherwise, it prints the error and returns None. The `change_directory` function attempts to change the current directory to the one specified in the arguments. If it fails, it prints the error.
+
+[`input.rs`](https://github.com/KekmaTime/ferrous/blob/main/src/mods/input.rs): This file contains functions for getting and parsing user input. The `get_input` function prompts the user for input and reads the input line from the standard input. The `parse_input` function splits the input into words (separated by whitespace) and returns a tuple containing the command and its arguments.
+
+[`help.rs`](https://github.com/KekmaTime/ferrous/blob/main/src/mods/help.rs): This file contains a function for printing help information. The `print_help` function prints out information about the shell and its commands when called.
+
+[`compare.rs`](https://github.com/KekmaTime/ferrous/blob/main/src/mods/compare.rs): This file contains a function for comparing the contents of two files. The `compare_files` function reads the contents of the files at the given paths and returns a boolean indicating whether the contents of the two files are equal.
+
+[`dirsize.rs`](https://github.com/KekmaTime/ferrous/blob/main/src/mods/dirsize.rs): This file contains functions for calculating the size of a directory and converting bytes to a human-readable format. The `dirsize` function calculates the total size of all files in a directory and its subdirectories. The `bytes_to_human_readable` function converts a size in bytes to a human-readable format.
+
+[`tree.rs`](https://github.com/KekmaTime/ferrous/blob/main/src/mods/tree.rs): This file contains functions for walking a directory tree and printing its structure. The `walk` function reads a directory, sorts the paths, and then iterates over them, printing each one with a prefix. The `tree` function prints a directory and its structure, along with counts of directories, files, and the total size.

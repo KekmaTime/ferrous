@@ -1,0 +1,11 @@
+pub mod commands;
+pub mod input;
+pub mod help;
+pub mod compare;
+pub mod dirsize;
+pub mod tree;
+pub mod diskinfo;
+pub mod copy;
+pub mod move_files;
+pub mod remove_files;
+pub mod permissions;
